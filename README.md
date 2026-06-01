@@ -45,5 +45,5 @@ Audio File → FFT → Feature Extraction → AHAP Generation → Haptic Playbac
 
 ## Использование
 
-1. **Demo Track** - встроенный трек "Rush" by Måneskin
+1. **Demo Track** - встроенный трек "Polina" by BabyCute
 2. **Import** - загрузка своих аудио/видео файлов (MP3, MP4, M4A, WAV)

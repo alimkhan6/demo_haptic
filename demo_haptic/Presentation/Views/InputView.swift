@@ -21,7 +21,7 @@ struct InputView: View {
                 ActionButtonView(
                     iconName: "waveform.circle.fill",
                     title: "Analyze Demo Track",
-                    subtitle: "Rush by Maneskin",
+                    subtitle: "Polina by BabyCute",
                     gradientColors: [.purple, .blue],
                     isDisabled: viewModel.isProcessing,
                     action: viewModel.analyzeDemoTrack
