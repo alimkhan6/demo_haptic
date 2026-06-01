@@ -1,17 +1,24 @@
-//
-//  demo_hapticApp.swift
-//  demo_haptic
-//
-//  Created by Alimkhan Zhanbekov on 01.06.2026.
-//
-
 import SwiftUI
 
 @main
-struct demo_hapticApp: App {
+struct HapticoApp: App {
+    // MARK: - Properties
+    
+    @StateObject private var coordinator: AppCoordinator
+    
+    // MARK: - Initialization
+    
+    init() {
+        // Create DI container and coordinator
+        let container = DIContainer()
+        _coordinator = StateObject(wrappedValue: container.makeAppCoordinator())
+    }
+    
+    // MARK: - Scene
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(coordinator: coordinator)
         }
     }
 }
